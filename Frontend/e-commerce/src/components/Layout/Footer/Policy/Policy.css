@@ -1,0 +1,51 @@
+.policy {
+    margin-top: 40px;
+    margin-bottom: -65px;
+  }
+
+  .policy .policy-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 0;
+  }
+
+  .policy .policy-list .policy-item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .policy .policy-item i {
+    font-size: 50px;
+    display: flex;
+  }
+
+  .policy .policy-item .policy-texts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .policy .policy-item .policy-texts strong {
+    font-weight: 600;
+  }
+
+  .policy .policy-item .policy-texts span {
+    font-size: 12px;
+  }
+  
+  /* Responsive */
+
+  @media (max-width: 768px) {
+    .policy .policy-list strong{
+      font-size: 10px;
+    }
+    .policy .policy-list i{
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .policy .policy-list li{
+      margin-bottom: 15px;
+    }
+  }

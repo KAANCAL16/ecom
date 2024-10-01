@@ -1,0 +1,98 @@
+
+.brands{
+  padding: 3%;
+}
+
+.brands-container {
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  margin-bottom: 3rem;
+}
+
+.brands-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.brand-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform ease .5s; 
+  cursor: pointer;
+}
+
+.brand-box img {
+  max-width: 75%;
+  height: 85px;
+  display: block;
+  object-fit: contain;
+}
+
+.brands-item:hover .brand-box {
+  transform: scale(1.05);
+}
+
+.carouselBtn .slick-arrow {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 2; 
+  background-color: transparent;
+  border: 2px solid #252525;
+}
+
+.carouselBtn .slick-prev {
+  color: #252525;
+}
+
+.carouselBtn .slick-next {
+  color: #252525;
+}
+
+.carouselBtn .slick-arrow:before {
+  color: #252525;
+  font-size: 16px;
+}
+
+.carouselBtn .slick-dots {
+  bottom: -30px;
+}
+
+.carouselBtn .slick-dots li button:before {
+  color: #252525;
+}
+
+.carouselBtn .slick-dots li.slick-active button:before {
+  color: red;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .carouselBtn .slick-prev {
+    left: 10px; 
+    z-index: 2;
+  }
+
+  .carouselBtn .slick-next {
+    right: 10px; 
+    z-index: 2;
+  }
+
+  .brands-item:hover .brand-box {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .carouselBtn .slick-prev,
+  .carouselBtn .slick-next {
+    display: none; 
+  }
+}

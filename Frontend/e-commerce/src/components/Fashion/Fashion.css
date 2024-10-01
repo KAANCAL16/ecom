@@ -1,0 +1,78 @@
+.padding{
+  padding: 2%;
+}
+
+.fashions {
+    background-color: gray;
+    padding: 2%;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .tags {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .fashion {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .fashion-box {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    box-sizing: border-box;
+  }
+  
+  .fashion img {
+    max-height: 300px;
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    object-fit: contain;
+  }
+  
+  .fashion img:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .fashion h3 {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .fashion-box {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    
+    .fashion img {
+      max-height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .fashion img {
+      max-height: 200px;
+    }
+  
+    .tags h1 {
+      font-size: 1.5rem;
+    }
+  
+    .tags p {
+      font-size: 0.875rem;
+    }
+  }
